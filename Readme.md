@@ -8,3 +8,9 @@ Roadmap para começar a utilizar git e github
 5 - Verificar com o git status se está tudo atualizado.
 
 6 - Caso queira mudar o nome da "master" para "main", só digitar `git branch M "main".
+7 - Agora é linkar o repositorio git com o github. Para isso precisamos criar um repositorio em nosso github e depois linkar eles.
+8 - Digite o comando `git remote add origin [link_ssh_ou_https_do_repo].
+
+E agora precisamos enviar os arquivos para o github.
+
+9 - `git push -u origin main` , e ai entrar com a senha e pronto.
