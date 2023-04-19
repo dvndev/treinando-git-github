@@ -14,3 +14,17 @@ Roadmap para começar a utilizar git e github
 E agora precisamos enviar os arquivos para o github.
 
 9 - `git push -u origin main` , e ai entrar com a senha e pronto.
+
+É comum que em determinada altura do projeto, queiramos criar uma ramificação, como por exemplo um botão novo ou uma nova página. E para isso criamos a "branch" ou ramificação.
+O comando é o `git checkout -b "[nova_branch]". Com esse comando já criamos e nos movemos para a nova branch, por isso do checkout.
+Não necessáriamente precisamos criar arquivos para essa nova branch, podemos alterar os já existentes e eles somente alterarão dentro dessa branch.
+Para enviar os arquivos para o github é a mesma idéia, com uma única diferença na hora do push, pois não estamos mais na origin e sim na "nova_branch". `git push origin nova_branch`.
+Eventualmente pode aparecer no github dizendo que a branch está mais atualizada que a main.
+    Caso você queira sair da branch e voltar a trabalhar na main é do digitar `git checkout main`.
+
+Quando eu quiser juntar a branch a main, preciso estar trabalhando com a main. `git checkout main`e digitar o comando "merge".
+Esse novo comando é o `git merge nova_branch`.
+E depois precisamos enviar ao github com o `git push origin main`.
+
+Caso queira copiar um repositorio seja seu ou de terceiros, basta ir ao github e copiar o link e utilizar o seguinte comando `git clone [link_do_repo]`.
+E para atualizar o clone,caso você queira verificar se há novas atualizações por exemplo, basta digitar o `git pull`.
